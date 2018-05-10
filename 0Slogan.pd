@@ -311,7 +311,7 @@ autoRecOnRatio 0 -8 0 10 -262144 -1 -1 25 256;
 #X msg 192 113 debitcredit;
 #X obj 141 366 s createNewBank;
 #X msg 141 342 testBank 8;
-#N canvas 602 121 493 652 PlayOne 0;
+#N canvas 602 121 493 652 PlayOne 1;
 #X obj 80 116 r bankFilesList;
 #X obj 80 140 t a a, f 12;
 #X obj 161 166 list length;
@@ -404,6 +404,7 @@ autoRecOnRatio 0 -8 0 10 -262144 -1 -1 25 256;
 #X connect 25 0 23 0;
 #X connect 25 1 24 0;
 #X connect 26 0 35 0;
+#X connect 26 0 3 1;
 #X connect 26 1 32 0;
 #X connect 28 0 18 0;
 #X connect 30 0 36 0;
@@ -950,7 +951,7 @@ autorecTab;
 #X connect 27 0 13 1;
 #X restore 283 346 pd MASTER;
 #X obj 440 183 tgl 40 0 CLOCKON CLOCKON CLOCKON 0 -8 0 14 -4034 -1
--1 1 1;
+-1 0 1;
 #X obj 460 19 loadbang;
 #X obj 440 104 t b b;
 #X obj 421 61 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
