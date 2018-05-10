@@ -1,0 +1,3 @@
+#N canvas 1 81 450 300 10;
+#X obj 55 86 sample \$1;
+#X obj 56 114 decoupeur \$1 \$2;

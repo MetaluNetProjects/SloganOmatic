@@ -1,0 +1,4 @@
+#N canvas 26 406 450 300 10;
+#X obj 85 71 inlet~;
+#X obj 85 92 throw~ MASTERvx;
+#X connect 0 0 1 0;
