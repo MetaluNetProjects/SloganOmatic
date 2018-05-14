@@ -1,13 +1,13 @@
 #N canvas 168 95 408 405 10;
 #X msg 65 206 -1;
-#X obj 65 140 t b b;
+#X obj 67 153 t b b;
 #X obj 214 129 random 100;
 #X obj 214 151 / 100;
-#X obj 65 114 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 67 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X floatatom 251 251 5 0 0 0 - - -, f 5;
 #X obj 214 195 + 0.5;
-#X obj 65 86 moses 0;
+#X obj 67 115 moses 0;
 #X obj 65 3 r \$1-metro;
 #X floatatom 247 79 5 0 0 0 - - -, f 5;
 #X obj 286 162 loadbang;
@@ -22,7 +22,7 @@
 -1;
 #X obj 109 176 random 200;
 #X obj 186 73 * 10000;
-#X obj 65 64 random 10000;
+#X obj 67 93 random 10000;
 #X obj 186 94 +;
 #X obj 186 18 r \$2-proba;
 #X obj 103 329 throw~ \$3-rev;
@@ -38,7 +38,9 @@
 #X msg 286 186 smooth 1;
 #X floatatom 340 277 5 0 0 0 - - -, f 5;
 #X obj 65 24 t b f;
-#X obj 127 86 *;
+#X obj 125 112 *;
+#X obj 65 45 random 100;
+#X obj 65 66 del;
 #X connect 0 0 28 0;
 #X connect 1 0 0 0;
 #X connect 2 0 3 0;
@@ -77,6 +79,8 @@
 #X connect 32 0 33 0;
 #X connect 33 0 17 0;
 #X connect 34 0 28 1;
-#X connect 36 0 21 0;
+#X connect 36 0 38 0;
 #X connect 36 1 37 0;
 #X connect 37 0 7 1;
+#X connect 38 0 39 0;
+#X connect 39 0 21 0;
