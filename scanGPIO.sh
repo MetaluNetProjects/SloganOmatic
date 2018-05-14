@@ -23,7 +23,7 @@ while true ; do
 			echo $n ${b[n]}";" | pdsend 55443 localhost udp
 		fi
 	done
-	sleep 0.1;
+	sleep 0.05;
 done
 
 	 
